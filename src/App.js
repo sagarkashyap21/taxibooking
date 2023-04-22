@@ -15,7 +15,7 @@ export default function App() {
       <Navbar />
       <Routes>
 
-      <Route exact path="/" element={<Section1 />}/>
+      <Route exact path="*" element={<Section1 />}/>
       <Route exact path="/about" element={<About />}/>
       <Route exact path="/service" element={<Section2  />}/>
       <Route exact path="/whychooseus" element={<Section3 />}/>
