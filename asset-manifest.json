@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/taxibooking/static/css/main.9612f405.css",
-    "main.js": "/taxibooking/static/js/main.370b8ce3.js",
+    "main.js": "/taxibooking/static/js/main.cb7c39dc.js",
     "static/js/787.945d7002.chunk.js": "/taxibooking/static/js/787.945d7002.chunk.js",
     "index.html": "/taxibooking/index.html",
     "main.9612f405.css.map": "/taxibooking/static/css/main.9612f405.css.map",
-    "main.370b8ce3.js.map": "/taxibooking/static/js/main.370b8ce3.js.map",
+    "main.cb7c39dc.js.map": "/taxibooking/static/js/main.cb7c39dc.js.map",
     "787.945d7002.chunk.js.map": "/taxibooking/static/js/787.945d7002.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9612f405.css",
-    "static/js/main.370b8ce3.js"
+    "static/js/main.cb7c39dc.js"
   ]
 }
