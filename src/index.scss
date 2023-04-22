@@ -1,0 +1,296 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+
+.mobile-container {
+  margin: auto;
+  color: white;
+  border-radius: .6rem;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: .9rem 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.logo{
+  background-color: orange;
+  color: white;
+  /* font-size: 2rem; */
+}
+
+.section1{
+
+& .active img{
+  height: 50rem;
+  opacity: .4;
+}
+ 
+& h5{
+  color: black;
+  font-size: 8rem;
+}
+& p{
+  color: gray;
+  font-size: 3rem;
+}
+
+& .sec12{
+
+  & h1{
+text-align: center;
+margin-top: 4rem;
+  }
+
+  & p{
+    display: block;
+    margin: auto;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: gray;
+    width: 95rem;
+    text-align: center;
+  }
+}
+}
+
+.section2{
+  background-color: lightgray;
+// margin-top: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+& h1{
+  margin-top: 3rem;
+  font-size: 4rem;
+}
+& .items{
+  // display:flex;
+  // border:2px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+  
+& .main{
+margin-top: 5rem;
+text-align: center;
+margin: 3rem;
+  & img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 20%;
+  }
+  & p{
+    font-size: 1.8rem;
+  }
+}
+}
+}
+
+.section3{
+  // background-color: red;
+  text-align: center;
+  margin-top: 2rem;
+
+  & h1{
+    font-size: 3rem;
+    margin-bottom: 2rem
+  }
+  & b{
+    // color: black;
+  }
+  & p{
+    font-size: 1.5rem;
+    color: gray;
+  }
+
+  & .sec32{
+    // margin-top: 5rem;
+    // border:2px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  // margin-top: 1rem;
+  // align-items: center;
+  
+    & div{
+      border:1px solid lightgrey;
+      padding: 1rem;
+      // width: 5rem;
+      width: fit-content;
+      margin: 2rem;
+text-align: center;
+margin-bottom: 0;
+      & img{
+        border:2px solid green;
+padding:1rem;
+background-color: #2d3239;
+      }
+      & p{
+        color: black;
+        margin-top: .5rem;
+      }
+    }
+
+  }
+  & button{
+    // color: red;
+    border:0;
+    background-color: orange;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: white;
+    border-radius: .5rem;
+  }
+}
+
+.booking{
+  // background-color: red;
+  background-color: lightgray;
+  padding: 2rem;
+
+  & label{
+    // color: red;
+    font-size: 1.5rem;
+  }
+
+  & button{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border: 0;
+    margin-right: 1rem;
+    // border: 2px solid red;
+  }
+  & button:hover{
+    background-color: black;
+  }
+  & .button{
+    // border: 2px solid red;
+    display: flex;
+    justify-content: center;
+  }
+ 
+}
+
+.footer{
+  background-color: orange;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.about{
+// align-items: center;
+// border: 2px solid red;
+display: flex;
+flex-direction: column;
+justify-content: center;
+// background-color: lightblue;
+align-items: center;
+  & h1{
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+  & p{
+    margin: 5rem;
+
+    font-size: 1.3rem;
+    width: 80rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+html{
+  font-size: 58%;
+}
+body{
+  // color: red;
+}
+}
+
+@media screen and (max-width: 880px) {
+  .section1 .sec12 p {
+width: 80rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .section1 .sec12 p {
+    width: 70rem;
+}
+}
+@media screen and (max-width: 750px) {
+
+html{
+  font-size: 50%;
+}
+}
+
+@media screen and (max-width: 750px) {
+
+.section3 .sec32 div {
+margin: 1rem;
+}
+}
+@media screen and (max-width: 600px) {
+  html{
+    font-size: 46%;
+  }
+  .section3 .sec32 div img {
+    padding: .5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .section3 .sec32 {
+// display: grid;
+// grid-template-columns: 1fr 1fr 1fr;
+flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 490px) {
+  .section1 .sec12 p {
+    width: 50rem;
+}
+}
+
+
